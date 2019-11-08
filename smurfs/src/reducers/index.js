@@ -10,7 +10,7 @@ const initialState = {
   error: ""
 };
 
-export const smurfReducer = (state, action) => {
+export const smurfReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_SMURFS_START:
       return { ...state, isFetching: true, error: "" };
