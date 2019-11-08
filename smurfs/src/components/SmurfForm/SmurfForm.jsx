@@ -12,8 +12,8 @@ const useStyles = makeStyles(theme => ({
   container: {
     backgroundColor: "#f5f5f5",
     maxWidth: 1000,
-    padding: "25px 10px",
-    margin: "0 auto"
+    padding: "25px 25px",
+    margin: "25px auto"
   },
   textField: {
     marginLeft: theme.spacing(1),
