@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import Smurfs from "./Smurfs/Smurfs";
+import { connect } from "react-redux";
+
+import { getSmurfs } from "../actions/smurfActions";
+
 class App extends Component {
+  componentDidMount() {
+    this.props.getSmurfs();
+  }
+
   render() {
     return (
       <div className="App">
@@ -15,4 +23,15 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    getSmurfs: () => dispatch(getSmurfs())
+  };
+};
+
+export default connect(
+  () => {
+    return {};
+  },
+  mapDispatchToProps
+)(App);
