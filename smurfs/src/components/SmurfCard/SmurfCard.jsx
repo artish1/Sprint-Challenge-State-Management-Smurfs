@@ -57,7 +57,7 @@ const SmurfCard = ({ name, age, height, smurfId }) => {
           size="small"
           color="primary"
         >
-          Remove
+          Delete
         </Button>
       </CardActions>
     </Card>
