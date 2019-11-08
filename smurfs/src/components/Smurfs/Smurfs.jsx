@@ -1,7 +1,7 @@
 import React from "react";
 import SmurfCard from "../SmurfCard/SmurfCard";
-
 import { useSelector } from "react-redux";
+import "./Smurfs.css";
 
 const Smurfs = () => {
   const smurfs = useSelector(state => state.smurfs);

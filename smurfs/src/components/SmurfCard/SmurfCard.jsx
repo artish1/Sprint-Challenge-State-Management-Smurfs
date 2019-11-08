@@ -8,7 +8,8 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   card: {
     minWidth: 275,
-    padding: 25
+    padding: 25,
+    boxSizing: "border-box"
   },
   title: {
     fontSize: 14

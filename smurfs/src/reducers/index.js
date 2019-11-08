@@ -5,7 +5,26 @@ import {
 } from "../actions/smurfActions";
 
 const initialState = {
-  smurfs: [],
+  smurfs: [
+    {
+      name: "Brainey",
+      age: 200,
+      height: "5cm",
+      id: 0
+    },
+    {
+      name: "Brainey",
+      age: 200,
+      height: "5cm",
+      id: 1
+    },
+    {
+      name: "Brainey",
+      age: 200,
+      height: "5cm",
+      id: 2
+    }
+  ],
   isFetching: false,
   error: ""
 };
